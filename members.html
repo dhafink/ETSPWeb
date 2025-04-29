@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Runners | NEON RUSH 5K</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="members-page">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <h1 class="logo-text"><span class="neon-text">NEON</span> <span class="rush-text">RUSH</span> <span class="five-k">5K</span></h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="members.html" class="active">Runners</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="members-container">
+        <h2 class="members-title">AWESOME PEOPLE <span class="y2k-text">JOINING THE RUN</span></h2>
+        
+        <div class="members-actions">
+            <button id="refreshMembers" class="refresh-button">REFRESH LIST</button>
+            <button id="clearAllMembers" class="clear-button">CLEAR ALL</button>
+        </div>
+        
+        <div class="members-display">
+            <div id="membersGrid" class="members-grid">
+                <!-- Member cards will be dynamically inserted here -->
+                <div class="no-members-message">No runners registered yet. Be the first!</div>
+            </div>
+        </div>
+        
+        <div class="back-to-registration">
+            <a href="registration.html" class="cta-button">JOIN THE RUN!</a>
+        </div>
+    </main>
+    
+    <!-- Confirmation Modal for Delete -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h2>ARE YOU SURE?</h2>
+            <p>This action cannot be undone!</p>
+            <div class="modal-actions">
+                <button id="confirmDelete" class="modal-button danger">DELETE</button>
+                <button id="cancelDelete" class="modal-button secondary">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 NEON RUSH 5K | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
